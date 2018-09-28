@@ -97,11 +97,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background-color: black;
+}
 
+header {
+    background-color: white;
+}
 
+nav{
+    background-color: greenyellow;
+}
 
+main {
+    background-color: grey;
+}
 
-
+footer {
+    background-color: red;
+}
 
 
 
