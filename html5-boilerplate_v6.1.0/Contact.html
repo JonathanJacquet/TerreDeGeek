@@ -25,7 +25,8 @@
     <div>
         <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/index.html"><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/logot2g.png" alt="" width="8%" height="8%" /></a>
     <nav>
-      <a href="">TOUS LES PRODUITS</a>
+      <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/index.html">ACUEIL</a>
+      <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/TLProduit.html">TOUS LES PRODUITS</a>
       <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/entreprise.html">PRESENTATION DE TERRE DE GEEK</a>
       <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/Contact.html">CONTACT</a>
     </nav>
@@ -42,11 +43,52 @@
   ~~~~~~~~~| Star Main |~~~~~~~~~
 -->
 <main>
-<div>
- <h1>NOUS CONTACTER</h1>
- <section>
-     <h2></h2>
- </section>
+    <div>
+        <h1>NOUS CONTACTER</h1>
+        <section>
+            <h2>Par Téléphone 24h/24 et 7/7</h2>
+                <p>Appelez le 03.21.99.87.56<br>-24h/24 et 7j/7 - Fermée pendant les fêtes et jours fériés</p>
+        </section>
+        <section>
+            <h2>Par Courrier</h2>
+                <p>SARL TerreDeGeek<br>
+                   62 Rue du caniche<br>
+                   59000 LILLE<br>
+                </p>
+        </section>
+        <section>
+            <h2>Par Formualire</h2>
+            <form action="/ma-page-de-traitement" method="post">
+                <div>
+                    <label for="name">Nom :*</label>
+                    <input type="text" id="name" name="user_name" required>
+                </div>
+                <div>
+                    <label for="year">Age :</label>
+                    <input type="number" id="year" name="user-year">
+                </div>
+                <div>
+                    <label for="mail">e-mail :*</label>
+                    <input type="email" id="mail" name="user_mail" required>
+                </div>
+                <div>
+                    <label for="tel">Tél :</label>
+                    <input type="tel" id="tel" min="10" max="10" name="user_tel">
+                </div>
+                <div>
+                    <br>
+                    <label for="subject">Objet :*</label>
+                    <input type="text" id="subject" name="user_subject" required>
+                </div>
+                <div>
+                    <label for="msg">Message :*</label>
+                    <textarea id="msg" name="user_message" required></textarea>
+                </div>
+                <div class="button">
+                        <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </section>
 </div>
 </main>
 <!--
