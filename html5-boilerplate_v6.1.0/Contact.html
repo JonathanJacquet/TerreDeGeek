@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" type="image/icon "href="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/terre2g.png">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -23,12 +23,14 @@
 <header>
   <div>
     <div>
-        <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/index.html"><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/logot2g.png" alt="" width="8%" height="8%" /></a>
     <nav>
-      <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/index.html">ACUEIL</a>
-      <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/TLProduit.html">TOUS LES PRODUITS</a>
-      <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/entreprise.html">PRESENTATION DE TERRE DE GEEK</a>
-      <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/Contact.html">CONTACT</a>
+    <ul>
+      <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/index.html"><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/logo.png" alt="" width="5%" height="5%" /></a>
+      <li><a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/index.html">ACCUEIL</a></li>
+      <li><a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/TLProduit.html">TOUS LES PRODUITS</a></li>
+      <li><a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/entreprise.html">PRESENTATION DE TERRE DE GEEK</a></li>
+      <li><a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/Contact.html">CONTACT</a></li>
+    </ul>
     </nav>
   </div>
 </header>
@@ -43,21 +45,22 @@
   ~~~~~~~~~| Star Main |~~~~~~~~~
 -->
 <main>
-    <div>
-        <h1>NOUS CONTACTER</h1>
+    <div id="contenair_main">
+      <div id="center_main">
+        <h2>NOUS CONTACTER</h2>
         <section>
-            <h2>Par Téléphone 24h/24 et 7/7</h2>
-                <p>Appelez le 03.21.99.87.56<br>-24h/24 et 7j/7 - Fermée pendant les fêtes et jours fériés</p>
+            <h3>Par Téléphone 24h/24 et 7/7</h3>
+                <p>Appelez le 03.21.99.87.56<br>24h/24 et 7j/7 - Fermée pendant les fêtes et jours fériés</p>
         </section>
         <section>
-            <h2>Par Courrier</h2>
+            <h3>Par Courrier</h3>
                 <p>SARL TerreDeGeek<br>
                    62 Rue du caniche<br>
                    59000 LILLE<br>
                 </p>
         </section>
         <section>
-            <h2>Par Formualire</h2>
+            <h3>Par Formulaire</h3>
             <form action="/ma-page-de-traitement" method="post">
                 <div>
                     <label for="name">Nom :*</label>
@@ -65,7 +68,7 @@
                 </div>
                 <div>
                     <label for="year">Age :</label>
-                    <input type="number" id="year" name="user-year">
+                    <input type="number" id="year" name="user-year" min="0">
                 </div>
                 <div>
                     <label for="mail">e-mail :*</label>
@@ -73,7 +76,7 @@
                 </div>
                 <div>
                     <label for="tel">Tél :</label>
-                    <input type="tel" id="tel" min="10" max="10" name="user_tel">
+                    <input type="tel" id="tel" name="user_tel">
                 </div>
                 <div>
                     <br>
@@ -89,6 +92,7 @@
                 </div>
             </form>
         </section>
+      </div>
 </div>
 </main>
 <!--
@@ -102,7 +106,7 @@
   ~~~~~~~~~| Star Footer |~~~~~~~~~
 -->
 <footer>
-<div>
+<div id="contenair_footer">
   <section>
     <h6>INFORMATIONS</h6>
     <ul>

@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" type="image/icon "href="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/terre2g.png">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -22,13 +22,14 @@
 -->
 <header>
   <div>
-    <div>
-        <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/index.html"><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/logot2g.png" alt="" width="8%" height="8%" /></a>
     <nav>
-      <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/index.html">ACUEIL</a>
-      <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/TLProduit.html">TOUS LES PRODUITS</a>
-      <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/entreprise.html">PRESENTATION DE TERRE DE GEEK</a>
-      <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/Contact.html">CONTACT</a>
+    <ul>
+        <a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/index.html"><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/logo.png" alt="" width="5%" height="5%" /></a>
+        <li><a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/index.html">ACCUEIL</a></li>
+        <li><a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/TLProduit.html">TOUS LES PRODUITS</a></li>
+        <li><a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/entreprise.html">PRESENTATION DE TERRE DE GEEK</a></li>
+        <li><a href="file:///home/jo/Bureau/simplon/site/LAB/semaine2/TerreDeGeek/html5-boilerplate_v6.1.0/Contact.html">CONTACT</a></li>
+    </ul>
     </nav>
   </div>
 </header>
@@ -43,98 +44,106 @@
   ~~~~~~~~~| Star Main |~~~~~~~~~
 -->
 <main>
-    <div>
-        <form action="/ma-page-de-traitement" method="post">
-            <fieldset>
-                Par Catégorie :<br>
-                <legend>Trier les produits</legend>
-                <select name="niv_cat">
-                    <option>(vide)</option>
-                    <option>Téléphonie</option>
-                    <option>Informatique</option>
-                    <option>Produits dérivés</option>
-                </select><br>
-                Par Avis client :<br>
-                    <input type="radio" name="review_customer"> ★☆☆☆☆<br>
-                    <input type="radio" name="review_customer"> ★★☆☆☆<br>
-                    <input type="radio" name="review_customer"> ★★★☆☆<br>
-                    <input type="radio" name="review_customer"> ★★★★☆<br>
-                    <input type="radio" name="review_customer"> ★★★★★<br>
-                Par Prix :<br>
-                    <input type="range" name="price"><br>
-                Par Lieu de disponibilité :<br>
-                <select name="niv_town">
-                    <option>(vide)</option>
-                    <option>Conche-en-ouche</option>
-                    <option>Neufchâtel-en-Bray</option>
-                    <option>Nouzonville</option>
-                    <option>Serqueux</option>
-                    <option>Forge-les-eaux</option>  
-                </select>
-            </fieldset>
-        </form>
-    </div>
-    <div>
-        <div>
-            <h3>Smartphone Samsung Galaxy Note 9</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/note9.jpg" alt="" height="300" width="400"></a>
+    <!--
+        Form
+    -->
+    <div id="contenair_main">
+        <div id="form_space">
+            <form action="/ma-page-de-traitement" method="post">
+                <fieldset>
+                    <legend><strong>Trier les produits</strong></legend>
+                    Par Catégorie :<br>
+                    <select name="niv_cat">
+                        <option>(vide)</option>
+                        <option>Téléphonie</option>
+                        <option>Informatique</option>
+                        <option>Produits dérivés</option>
+                    </select><br>
+                    Par Avis client :<br>
+                        <input type="radio" name="review_customer"> ★☆☆☆☆<br>
+                        <input type="radio" name="review_customer"> ★★☆☆☆<br>
+                        <input type="radio" name="review_customer"> ★★★☆☆<br>
+                        <input type="radio" name="review_customer"> ★★★★☆<br>
+                        <input type="radio" name="review_customer"> ★★★★★<br>
+                    Par Prix :<br>
+                        <input type="range" name="price"><br>
+                    Par Lieu de disponibilité :<br>
+                    <select name="niv_town">
+                        <option>(vide)</option>
+                        <option>Conche-en-ouche</option>
+                        <option>Neufchâtel-en-Bray</option>
+                        <option>Nouzonville</option>
+                        <option>Serqueux</option>
+                        <option>Forge-les-eaux</option>  
+                    </select>
+                </fieldset>
+            </form>
         </div>
+<!--
+    product
+-->
         <div>
-            <h3>Figurine One Piece - Katakuri</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/katakuri.jpg" alt="" height="300" width="400"></a>
-        </div>
-        <div>
-            <h3>Apple iMac 27"</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/macpc.jpg" alt="" height="300" width="400"></a>
-        </div>
-        <div>
-            <h3>Westworld saison 2 Blue-Ray 4K</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/ww.jpg" alt="" height="300" width="400"></a></a>
-        </div>
-        <div>
-            <h3>Figurine One Piece - Luffy geath 4th</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/luffy.jpg" alt="" height="300" width="400"></a>
-        </div>
-        <div>
-            <h3>Sony Playstation 4</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/ps4.jpeg" alt="" height="300" width="400"></a>
-        </div>
-        <div>
-            <h3>Smartphone Samsung Galaxy S9</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/s9.jpg" alt="" height="300" width="400"></a>
-        </div>
-        <div>
-            <h3>Figurine Dragon Ball Z - Goku</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/goku.jpg" alt="" height="300" width="400"></a>
-        </div>
-        <div>
-            <h3>Figurine Boruto - Naruto Hokage</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/naruto.jpg" alt="" height="300" width="400"></a>
-        </div>
-        <div>
-            <h3>Game of Thrones saison 1 à 7</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/got.jpg" alt="" height="300" width="400"></a>
-        </div>
-        <div>
-            <h3>Mr.Robot saison 1 à 3</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/mrorobt.jpg" alt="" height="300" width="400"></a>
-        </div>
-        <div>
-            <h3>Apple iPhone 7</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/iphone.jpg" alt="" height="300" width="400"></a>
-        </div>
-        <div>
-            <h3>Smartphone Huawei P20 PRO </h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/p20pro.jpg" alt="" height="300" width="400"></a>
-        </div>
-        <div>
-            <h3>Ecran 34" incurvé Alienware</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/alienware.jpg" alt="" height="300" width="400"></a>
-        </div>
-        <div>
-            <h3>PC hybride Asus 14"</h3>
-            <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/asus.jpg" alt="" height="300" width="400"></a>
+            <div>
+                <h3>Smartphone Samsung Galaxy Note 9</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/note9.jpg" alt="" height="300" width="400"></a>
             </div>
+            <div>
+                <h3>Figurine One Piece - Katakuri</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/katakuri.jpg" alt="" height="300" width="400"></a>
+            </div>
+            <div>
+                <h3>Apple iMac 27"</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/macpc.jpg" alt="" height="300" width="400"></a>
+            </div>
+            <div>
+                <h3>Westworld saison 2 Blue-Ray 4K</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/ww.jpg" alt="" height="300" width="400"></a></a>
+            </div>
+            <div>
+                <h3>Figurine One Piece - Luffy geath 4th</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/luffy.jpg" alt="" height="300" width="400"></a>
+            </div>
+            <div>
+                <h3>Sony Playstation 4</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/ps4.jpeg" alt="" height="300" width="400"></a>
+            </div>
+            <div>
+                <h3>Smartphone Samsung Galaxy S9</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/s9.jpg" alt="" height="300" width="400"></a>
+            </div>
+            <div>
+                <h3>Figurine Dragon Ball Z - Goku</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/goku.jpg" alt="" height="300" width="400"></a>
+            </div>
+            <div>
+                <h3>Figurine Boruto - Naruto Hokage</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/naruto.jpg" alt="" height="300" width="400"></a>
+            </div>
+            <div>
+                <h3>Game of Thrones saison 1 à 7</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/got.jpg" alt="" height="300" width="400"></a>
+            </div>
+            <div>
+                <h3>Mr.Robot saison 1 à 3</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/mrorobt.jpg" alt="" height="300" width="400"></a>
+            </div>
+            <div>
+                <h3>Apple iPhone 7</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/iphone.jpg" alt="" height="300" width="400"></a>
+            </div>
+            <div>
+                <h3>Smartphone Huawei P20 PRO </h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/p20pro.jpg" alt="" height="300" width="400"></a>
+            </div>
+            <div>
+                <h3>Ecran 34" incurvé Alienware</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/alienware.jpg" alt="" height="300" width="400"></a>
+            </div>
+            <div>
+                <h3>PC hybride Asus 14"</h3>
+                <a><img src="../../TerreDeGeek/html5-boilerplate_v6.1.0/img/asus.jpg" alt="" height="300" width="400"></a>
+                </div>
+        </div>
     </div>
 </main>
 <!--
@@ -148,7 +157,7 @@
   ~~~~~~~~~| Star Footer |~~~~~~~~~
 -->
 <footer>
-<div>
+<div id="contenair_footer">
   <section>
     <h6>INFORMATIONS</h6>
     <ul>
