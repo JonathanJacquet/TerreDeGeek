@@ -44,30 +44,34 @@
 -->
 <main>
     <div>
-        <form action="/ma-page-de-traitement" method="post">Par Catégorie :<br>
-        <select name="niv_cat">
-            <option>(vide)</option>
-            <option>Téléphonie</option>
-            <option>Informatique</option>
-            <option>Produits dérivés</option>
-        </select><br>
-        Par Avis client :<br>
-        <input type="radio" name="review_customer"> ★☆☆☆☆<br>
-        <input type="radio" name="review_customer"> ★★☆☆☆<br>
-        <input type="radio" name="review_customer"> ★★★☆☆<br>
-        <input type="radio" name="review_customer"> ★★★★☆<br>
-        <input type="radio" name="review_customer"> ★★★★★<br>
-        Par Prix :<br>
-        <input type="range" name="price"><br>
-        Par Lieu de disponibilité :<br>
-        <select name="niv_town">
-            <option>(vide)</option>
-            <option>Conche-en-ouche</option>
-            <option>Neufchâtel-en-Bray</option>
-            <option>Nouzonville</option>
-            <option>Serqueux</option>
-            <option>Forge-les-eaux</option>  
-        </select>
+        <form action="/ma-page-de-traitement" method="post">
+            <fieldset>
+                Par Catégorie :<br>
+                <legend>Trier les produits</legend>
+                <select name="niv_cat">
+                    <option>(vide)</option>
+                    <option>Téléphonie</option>
+                    <option>Informatique</option>
+                    <option>Produits dérivés</option>
+                </select><br>
+                Par Avis client :<br>
+                    <input type="radio" name="review_customer"> ★☆☆☆☆<br>
+                    <input type="radio" name="review_customer"> ★★☆☆☆<br>
+                    <input type="radio" name="review_customer"> ★★★☆☆<br>
+                    <input type="radio" name="review_customer"> ★★★★☆<br>
+                    <input type="radio" name="review_customer"> ★★★★★<br>
+                Par Prix :<br>
+                    <input type="range" name="price"><br>
+                Par Lieu de disponibilité :<br>
+                <select name="niv_town">
+                    <option>(vide)</option>
+                    <option>Conche-en-ouche</option>
+                    <option>Neufchâtel-en-Bray</option>
+                    <option>Nouzonville</option>
+                    <option>Serqueux</option>
+                    <option>Forge-les-eaux</option>  
+                </select>
+            </fieldset>
         </form>
     </div>
     <div>
