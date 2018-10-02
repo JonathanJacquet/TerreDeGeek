@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+   html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -186,6 +186,7 @@ footer {
     display: flex;
     justify-content: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #form_space {
